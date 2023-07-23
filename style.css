@@ -48,6 +48,10 @@ header .navmenu .navitem a{
     padding: 30px 16px;
     color: #383838;
 }
+header .navmenu .navitem .navicon{
+    transform: translateY(4px);
+    font-size: 16px;
+}
 header .navmenu .navitem{
     position: relative;
 }
@@ -80,7 +84,7 @@ header .navmenu .navitem .dropdown::after{
     border-top: 10px solid transparent;
     border-bottom: 10px solid white;
     border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
+    border-right: 10px solid transparent;   
 }
 header .navmenu .navitem .dropdown a{
     padding: 16px; 
