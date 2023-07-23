@@ -18,6 +18,9 @@ body{
     text-decoration: none;
     color: inherit;
 }
+.hide{
+    display: none;
+}
 
 /* ======================= COMPONENTS ===========================*/
 header{

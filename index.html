@@ -55,5 +55,22 @@
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        // toggle search input
+        const searchIcon = document.querySelector('.search-icon');
+        const headersearchform = document.querySelector('.header-search-form');
+        const searchInput = document.querySelector('.search-input');
+
+        function toggleSearchBar(){
+            searchIcon.classList.toggle('hide');
+            headersearchform.classList.toggle('hide');
+            searchInput.focus();
+        };
+        searchIcon.addEventListener('click', toggleSearchBar);
+        
+        searchInput.addEventListener('blur', toggleSearchBar);
+        
+    </script>
 </body>
 </html>
