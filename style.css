@@ -32,6 +32,8 @@ header{
     box-sizing: border-box;
 }
 header nav{
+    display: flex; 
+    align-items: center;
     height: inherit;
 }
 header ul{
