@@ -140,8 +140,15 @@ header .navmenu .navitem .dropdown a{
         height: 100%;
         background-color: rgba(0, 0, 0, 0.45);
     }
+    header .logo-wrapper{
+        width: 100%;
+        text-align: center;
+    }
     header nav{
-         
+       flex-grow: 1;  
+    }
+    header .search-item, header .search-item input{
+        width: 100%;
     }
     header .navmenu{
         position: fixed;

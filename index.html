@@ -41,7 +41,7 @@
             </li>
             <li class="navitem"><a href="#">Register</a></li>
             <li class="navitem"><a href="#">Login</a></li>
-            <!-- <li class="navitem">
+            <li class="navitem">
                 <a href="#"> <ion-icon name="person-circle-outline" class="navicon"></ion-icon>
                     Hamada 
                     <ion-icon name="chevron-down-outline" class="navicon"></ion-icon></a>
@@ -49,7 +49,7 @@
                 <li><a href="#">Dashboard</a></li>
                 <li><a href="#">Logout</a></li>
               </ul>
-            </li> -->
+            </li>
         </ul>
         </nav>
 
@@ -61,14 +61,20 @@
 
     <script>
         // toggle search input
+        const mobileBreakpoint = 800;
         const searchIcon = document.querySelector('.search-icon');
         const headersearchform = document.querySelector('.header-search-form');
         const searchInput = document.querySelector('.search-input');
+        const logowrapper = document.querySelector('.logo-wrapper');
 
         function toggleSearchBar(){
             searchIcon.classList.toggle('hide');
             headersearchform.classList.toggle('hide');
             searchInput.focus();
+
+            if(window.innerWidth <= mobileBreakpoint){
+                logowrapper.classList.toggle('hide');
+            }
         };
         searchIcon.addEventListener('click', toggleSearchBar);
         
