@@ -141,7 +141,7 @@ header .navmenu .navitem .dropdown a{
         background-color: rgba(0, 0, 0, 0.45);
     }
     header nav{
-        
+         
     }
     header .navmenu{
         position: fixed;
@@ -174,9 +174,15 @@ header .navmenu .navitem .dropdown a{
         border-radius: 0px;
         box-shadow: none;
         opacity: 1;
-        max-height: 200px;
+        max-height: 0px;
+        overflow: hidden;
         z-index: 1;
         transform: translateY(0px);
+        transition: max-height 0.25s ease-in-out;
+    }
+    header .navmenu .navitem.active .dropdown{
+        max-height: 300px;
+        transition: max-height 0.25s ease-in-out;
     }
     header .navmenu .navitem .dropdown a{
     padding-left: 32px; 
