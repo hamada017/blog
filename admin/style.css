@@ -204,9 +204,6 @@ header .navmenu .navitem .dropdown a{
     display: flex;
     min-height: calc(100% - 80px);
 }
-.page-wrapper .sidebar-overlay{
-    display: none;
-}
 
 .page-wrapper .sidebar{
     flex-basis: 18%;
@@ -263,16 +260,7 @@ header .navmenu .navitem .dropdown a{
         transform: translateX(0px);
         transition: transform 0.25s ease-in-out;
     }
-    .page-wrapper .sidebar-overlay.open{
-         display: block;
-         position: fixed;
-         top: 0;
-         left: 0;
-         height: 100%;
-         width: 100%;
-         z-index: 2;
-         background-color: rgba(0, 0, 0, 0.45);
-    }
+
 
 }
 
