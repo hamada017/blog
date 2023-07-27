@@ -33,6 +33,7 @@
     </header>
 
     <div class="page-wrapper">
+        <div class="sidebar-overlay"></div>
        <div class="sidebar">
         <ul class="list-menu">
             <li>
@@ -97,29 +98,21 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
     <script>
-
-        // navbar responsive 
-
+ 
+       //sidebar responsive
         const menuIcon = document.querySelector('.menu-icon');
-        const navOverlay = document.querySelector('.nav-overlay');
-        const navMenu =document.querySelector('.navmenu');
-        const dropdowns = document.querySelectorAll('.navitem .dropdown');
+        const sidebar = document.querySelector('.sidebar');
+        const sidebarOverlay = document.querySelector('.sidebar-overlay');
 
-        menuIcon.addEventListener('click', function(){
-          navOverlay.classList.toggle('open');
-          navMenu.classList.toggle('open');
-        });
+        function togglesidebare(){
+            sidebar.classList.toggle('open');
+            sidebarOverlay.classList.toggle('open');
+        }
 
-        navOverlay.addEventListener('click', function(){
-            navOverlay.classList.remove('open');
-            navMenu.classList.remove('open');
-        });
-        dropdowns.forEach(dropdown =>{
-            const navItem = dropdown.closest('.navitem');
-            navItem.addEventListener('click', function(){
-                navItem.classList.toggle('active');
-            });
-        });
+        menuIcon.addEventListener('click', togglesidebare)
+        sidebarOverlay.addEventListener('click', togglesidebare);
+       
+   
         
     </script>
 </body>
