@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Blog</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Dashboard</title>
 </head>
 <body>
     
@@ -93,31 +93,17 @@
        </div>
 
        <div class="page-content">
-        <h1 class="center">Admin Dashboard</h1>
+        <div class="Admin-container">
+            <h1 class="center">Admin Dashboard</h1>
+
+        </div>
        </div>
     </div>
     <!-- ===========  icons js  ======== -->
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
-    <script>
- 
-       //sidebar responsive
-        const menuIcon = document.querySelector('.menu-icon');
-        const sidebar = document.querySelector('.sidebar');
-        const navOverlay = document.querySelector('.nav-overlay');
-
-        function togglesidebare(){
-            sidebar.classList.toggle('open');
-            navOverlay.classList.toggle('open');
-        }
-
-        menuIcon.addEventListener('click', togglesidebare);
-        navOverlay.addEventListener('click', togglesidebare);
-       
-   
-        
-    </script>
+     
+    <script src="../assets/js/admin.js"></script>
 </body>
 </html>
