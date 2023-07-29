@@ -285,5 +285,29 @@ header .navmenu .navitem .dropdown a{
 
 
 }
+/* ============  responsive boxes/container ============= */
+.admin-container{
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+.sn-box{
+    padding: 32px 10px;
+    width: 50%;
+}
+.md-box{
+    padding: 32px 10px;
+    width: 75%;
+}
+.lg-box{
+    padding: 32px 10px;
+    width: 95%;
+}
+
+@media only screen and (max-width: 1024px){
+    .md-box, .lg-box{
+        width: 100%;
+    }
+}
 
 /* ======================= PAGES ===========================*/
